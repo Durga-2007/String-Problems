@@ -7,10 +7,12 @@ public class p43 {
 
         HashMap<Character, Integer> map = new HashMap<>();
         ArrayList<Integer> result = new ArrayList<>();
+
         for (int i = 0; i < p.length(); i++) {
             char ch = p.charAt(i);
             map.put(ch, map.getOrDefault(ch, 0) + 1);
         }
+        
         HashMap<Character, Integer> window = new HashMap<>();
         int left = 0;
 
